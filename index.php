@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<?php require_once 'src/includes/head.html'; ?>
+	<link rel="stylesheet" href="src/css/app.css">
+	<link rel="stylesheet" href="src/css/principal.css">
+</head>
+<body>
+	<header class=" text-center">
+		<p class="text-white">
+			<a href="index.php">Scribermatch</a>
+		</p>
+	</header>
+		<div class="flex justify-center">
+			<div class="w-24 mt-8">
+				<img src="src/imagenes/users.png" alt="Usuarios Scribermatch">
+			</div>
+		</div>
+		<div class="flex justify-center mt-3">
+			<form class="bg-white shadow-xl rounded-lg px-4 pt-6 pb-8 mb-4 xl:w-1/4 lg:w-2/6 md:w-5/12 sm:w-3/5 w-11/12" autocomplete="off">
+				<p class="text-orange-gibs mb-3 font-medium text-xl text-center ">Entra y sigue disfrutando en Scribermatch</p>
+				<div class="mb-4">
+     				<label class="text-blue-400 font-medium" for="usuario">
+       					Usuario
+      				</label>
+      			</div>
+      			  <input class="shadow appearance-none border-2 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-orange-400 -m-12 ml-0" id="usuario" name="usuario" type="text" placeholder="Ingresa tu nombre de usuario">
+				<div class="mb-4"><br/>
+     				<label class="text-blue-400 font-medium" for="clave">
+       					Clave
+      				</label>
+      			</div>
+      			 <input class="shadow appearance-none border-2 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-orange-400 -m-12 ml-0" id="clave" name="clave" type="password" placeholder="Ingresa tu clave">
+
+      			 <input type="submit" value="Iniciar sesión" class="mb-2 mt-8 w-full bg-orange-gibs text-white font-bold py-2 px-4 rounded-lg cursor-pointer">
+      			 <button class="bg-blue-gibs font-bold text-white w-full py-2 px-4 rounded-lg" onclick="location.href='registro.php'">Registrate</button>
+			</form>		
+		</div>
+		<footer class="absolute bg-white w-full border-t-2 border-gray-300 h-12">
+			<div class="float-left text-gray-800 text-sm tracking-wide mt-3">
+				<a href="secundarios/contactosparausuario.php" class="m-1">¿Necesitas ayuda?</a>
+    			<a href="secundarios/publicidad.php" class="m-1">¿Quieres publicidad?</a> 
+    			<a href="secundarios/informacion.php" class="m-1">Más información</a>
+    		</div>
+    		<div class="float-right text-gray-900 text-xs tracking-wide mt-1">
+        		<p>&copy;Scribermatch 2019</p>
+        		<p>Fundador y creador Gibs Gutiérrez</p>
+        	</div>
+		</footer>
+</body>
+</html>
